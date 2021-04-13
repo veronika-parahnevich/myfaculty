@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    background-color: #dab1b1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-shadow: 0 0 3px black;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+.neon_text {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+    }
+}
+
+#vertical-menu {
+    font-size: 16pt;
+}
+
+#vertical-menu a {
+    color: white;
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+#vertical-menu a:hover {
+    color: rgba(49, 137, 231, 0.88);
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+#dean {
+    float: left;
+    margin: 0px 2vw 0 0;
+}
+
+#dean img {
+    /* width: 13vw; */
+    height: 400px;
+}
+
+#content {
+    color: white;
+    font-size: 12pt;
+}
+
+#content span {
+    font-size: 13pt;
+}
+
+#content h2 {
+    color: rgb(74, 156, 243);
+}
+
+#content h4,
+#content h5 {
+    color: rgb(54, 121, 192);
+}
+
+.border_top {
+    border-top: 3px solid black;
+}
+
+#schedule_table {
+    display: block;
+    overflow-x: auto;
+}
+
+#schedule_table td,
+#schedule_table th {
+    border-width: 3px;
+}
+
+#schedule_table td {
+    padding: 0;
+}
+
+@media (min-width: 200px) {
+    .neon_text {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .neon_text {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .neon_text {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .neon_text {
+        font-size: 5.6rem;
+    }
+}
